@@ -9,15 +9,28 @@ export default function Navbar() {
             <NavLink
                 to={"/"}
                 className={({ isActive }) => { return isActive ? "active" : "" }}>
-                Home </NavLink>
+                Home
+            </NavLink>
             <NavLink
                 to={"/about"}
                 className={({ isActive }) => { return isActive ? "active" : "" }}>
-                About Me </NavLink>
+                About Me
+            </NavLink>
             <NavLink
                 to={"/contact"}
                 className={({ isActive }) => { return isActive ? "active" : "" }}>
-                Contact Me </NavLink>
+                Contact Me
+            </NavLink>
+            <NavLink
+                to={"/projects"}
+                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                My Projects
+            </NavLink>
+            <NavLink
+                to={"/projects/terminalApp"}
+                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                My Terminal Application
+            </NavLink>
         </nav >
     )
 }
