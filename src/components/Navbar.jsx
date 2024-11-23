@@ -1,12 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../styles/Navbar.css"
 
-export default function Navbar(){
-    return(
+export default function Navbar() {
+    return (
         <nav>
             <h1>Example Navbar Content</h1>
             <Link to={"/"}>Home </Link>
-            <Link to={"/about"}>About Me </Link>
-            <Link to={"/contact"}>Contact Me </Link>
-        </nav>
+            <NavLink
+                to={"/"}
+                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                Home </NavLink>
+            <NavLink
+                to={"/about"}
+                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                About Me </NavLink>
+            <NavLink
+                to={"/contact"}
+                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                Contact Me </NavLink>
+        </nav >
     )
 }
