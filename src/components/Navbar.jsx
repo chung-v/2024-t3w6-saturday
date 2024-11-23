@@ -23,7 +23,7 @@ export default function Navbar() {
             </NavLink>
             <NavLink
                 to={"/projects"}
-                className={({ isActive }) => { return isActive ? "active" : "" }}>
+                className={({ isActive }) => { return isActive ? "active" : "" }} end>
                 My Projects
             </NavLink>
             <NavLink
