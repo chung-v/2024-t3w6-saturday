@@ -1,6 +1,9 @@
+import { useParams } from "react-router-dom";
 
-export default function TerminalAppProject(){
-    return(
+export default function TerminalAppProject() {
+    let { versionNumber } = useParams();
+
+    return (
         <div>
             <h1>My Terminal Project</h1>
             <p>Project features:</p>
@@ -9,6 +12,7 @@ export default function TerminalAppProject(){
                 <li>Feature 2</li>
                 <li>Feature 3</li>
             </ul>
+            {versionNumber && <h3>Version Number: {versionNumber}</h3>}
         </div>
     )
 }
