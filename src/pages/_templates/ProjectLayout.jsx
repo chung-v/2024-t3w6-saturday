@@ -11,5 +11,4 @@ export default function ProjectLayout(props) {
             <h6>Copyright {new Date(Date.now()).getFullYear()}</h6>
         </div>
     )
-
 }

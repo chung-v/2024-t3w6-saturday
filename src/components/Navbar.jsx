@@ -31,6 +31,6 @@ export default function Navbar() {
                 className={({ isActive }) => { return isActive ? "active" : "" }}>
                 My Terminal Application
             </NavLink>
-        </nav >
+        </nav>
     )
 }
